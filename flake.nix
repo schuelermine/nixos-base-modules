@@ -1,7 +1,10 @@
 {
   outputs = { self }: {
     nixosModules = {
+      default = import ./.;
       console = import ./console.nix;
+      desktop = import ./desktop.nix;
+      fonts = import ./fonts.nix;
       i18n = import ./i18n.nix;
       kernel = import ./kernel.nix;
       nix = import ./nix.nix;
