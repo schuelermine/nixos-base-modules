@@ -2,6 +2,7 @@
   imports = [
     ./console.nix
     ./i18n.nix
+    ./kernel.nix
     ./nix.nix
     ./pipewire.nix
     ./plymouth.nix

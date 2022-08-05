@@ -3,6 +3,7 @@
     nixosModules = {
       console = import ./console.nix;
       i18n = import ./i18n.nix;
+      kernel = import ./kernel.nix;
       nix = import ./nix.nix;
       pipewire = import ./pipewire.nix;
       plymouth = import ./plymouth.nix;
