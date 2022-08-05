@@ -1,1 +1,1 @@
-{ systemd.targets.network-online.wantedBy = lib.mkForce [ ]; }
+{ lib, ... }: { systemd.targets.network-online.wantedBy = lib.mkForce [ ]; }
