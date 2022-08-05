@@ -1,4 +1,4 @@
-{ pkgs }: {
+{ pkgs, ... }: {
   fonts.fonts = with pkgs; [
     agave
     atkinson-hyperlegible
