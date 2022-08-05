@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   console = {
-    packages = [ pkgs.terminus-font ];
+    packages = [ pkgs.terminus_font ];
     font = "ter-v28b";
     useXkbConfig = true;
     earlySetup = true;
