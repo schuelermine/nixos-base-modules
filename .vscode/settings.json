@@ -2,7 +2,7 @@
     "[nix]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "brettm12345.nixfmt-vscode",
-        "editor.formatOnSave": true
-    }
+        "editor.formatOnSave": true,
+    },
+    "nix.formatterPath": "nixfmt"
 }
