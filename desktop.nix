@@ -36,6 +36,7 @@
         xorg.xwininfo
         xorg.xkill
         xsel
+        imagemagick
       ];
   };
 }
