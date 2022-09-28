@@ -10,7 +10,6 @@
     ffmpeg
     file
     htop
-    imagemagick
     killall
     lsof
     man-pages
