@@ -36,7 +36,7 @@
         xorg.xwininfo
         xorg.xkill
         xsel
-        imagemagick
+        yaru-theme
       ];
   };
 }
