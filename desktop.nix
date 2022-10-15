@@ -1,4 +1,6 @@
+{ themed-gnome-shell-overlay }:
 { pkgs, ... }: {
+  nixpkgs.overlays = [ themed-gnome-shell-overlay ];
   services = {
     xserver = {
       enable = true;

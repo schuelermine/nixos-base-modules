@@ -1,7 +1,8 @@
+args@{ ... }:
 {
   imports = [
     ./console.nix
-    ./desktop.nix
+    (import ./desktop.nix args)
     ./fonts.nix
     ./i18n.nix
     ./kernel.nix

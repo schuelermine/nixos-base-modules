@@ -1,9 +1,10 @@
 {
-  outputs = { self }: {
+  inputs.themed-gnome-shell-nix.url = "github:schuelermine/themed-gnome-shell-nix";
+  outputs = { self, themed-gnome-shell-nix }: {
     nixosModules = {
-      default = import ./.;
+      default = import ./. { themed-gnome-shell-overlay = themed-gnome-shell-nix.overlays.default; };
       console = import ./console.nix;
-      desktop = import ./desktop.nix;
+      desktop = import ./desktop.nix { themed-gnome-shell-overlay = themed-gnome-shell-nix.overlays.default; };
       fonts = import ./fonts.nix;
       i18n = import ./i18n.nix;
       kernel = import ./kernel.nix;
