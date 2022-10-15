@@ -1,6 +1,14 @@
 { themed-gnome-shell-overlay }:
 { pkgs, ... }: {
-  nixpkgs.overlays = [ themed-gnome-shell-overlay ];
+  nixpkgs.overlays = [
+    (themed-gnome-shell-overlay "${pkgs.yaru-theme}/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource")
+    (selfPkgs: superPkgs: {
+      yaru-theme = super.yaru-theme.overrideAttrs
+        (selfAttrs: superAttrs: {
+          mesonFlags = superAttrs.mesonFlags or [ ] ++ [ "-Dgnome-shell-gresource=TRUE" ];
+        });
+    })
+  ];
   services = {
     xserver = {
       enable = true;
