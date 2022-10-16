@@ -7,11 +7,11 @@
     },
     "themed-gnome-shell-nix": {
       "locked": {
-        "lastModified": 1665921139,
-        "narHash": "sha256-P9qY1iwCoCmQoTt1Xl97sHMpbw1pKOXvteMQQxwY70w=",
+        "lastModified": 1665921406,
+        "narHash": "sha256-8yhNWl0MHQ70O5ordTJHpnHwi7eWTIPuf8NdMvD82Ts=",
         "owner": "schuelermine",
         "repo": "themed-gnome-shell-nix",
-        "rev": "b78e6b8aabf33225c7c501934622bdc4480fad19",
+        "rev": "9320f3e102e90470599f51b0835208a72de93b4f",
         "type": "github"
       },
       "original": {
