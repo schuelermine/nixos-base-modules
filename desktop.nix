@@ -36,7 +36,7 @@
       ]) ++ [
         gnome.gnome-tweaks
         qalculate-gtk
-        kitty
+        blackbox-terminal
         firefox
         mpv
         vlc
