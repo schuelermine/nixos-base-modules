@@ -1,14 +1,4 @@
 { pkgs, ... }: {
-  nixpkgs.overlays = [
-    (selfPkgs: superPkgs: {
-      libadwaita = superPkgs.libadwaita.overrideAttrs (selfAttrs: superAttrs: {
-        src = selfPkgs.fetchzip {
-          url = "http://archive.ubuntu.com/ubuntu/pool/main/liba/libadwaita-1/libadwaita-1_1.2.0.orig.tar.xz";
-          hash = "sha256-V9AaObT6+9JCHKdhWaDrYxEoBCrjnCvwbddSuUsUmKw=";
-        };
-      });
-    })
-  ];
   services = {
     xserver = {
       enable = true;
