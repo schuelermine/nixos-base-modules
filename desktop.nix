@@ -12,7 +12,6 @@
     gnome.excludePackages = with pkgs; [
       gnome.gnome-calculator
       gnome.epiphany
-      gnome-console
     ];
     systemPackages = with pkgs;
       (with aspellDicts; [ de en en-computers en-science ])
@@ -26,7 +25,6 @@
       ]) ++ [
         gnome.gnome-tweaks
         qalculate-gtk
-        blackbox-terminal
         firefox
         mpv
         vlc
