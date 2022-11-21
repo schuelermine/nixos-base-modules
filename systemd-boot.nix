@@ -1,10 +1,13 @@
 {
-  boot.loader = {
-    systemd-boot = {
-      enable = true;
-      editor = false;
+  boot = {
+    initrd.systemd.enable = true;
+    loader = {
+      systemd-boot = {
+        enable = true;
+        editor = false;
+      };
+      timeout = 0;
+      efi.canTouchEfiVariables = true;
     };
-    timeout = 0;
-    efi.canTouchEfiVariables = true;
   };
 }
