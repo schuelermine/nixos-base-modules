@@ -26,14 +26,9 @@
         gnome.gnome-tweaks
         qalculate-gtk
         firefox
-        mpv
-        vlc
         gnome.gnome-sound-recorder
         gimp
         libreoffice-fresh
-        xorg.xwininfo
-        xorg.xkill
-        xsel
         yaru-theme
       ];
   };
