@@ -19,5 +19,6 @@
     tldr
     trash-cli
     wget
+    xsel
   ];
 }
