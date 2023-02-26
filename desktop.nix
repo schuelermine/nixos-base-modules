@@ -15,15 +15,7 @@
     ];
     systemPackages = with pkgs;
       (with aspellDicts; [ de en en-computers en-science ])
-      ++ (with hunspellDicts; [
-        de-de
-        en-gb-ise
-        en-gb-ize
-        en-gb-large
-        en-us
-        en-us-large
-      ]) ++ [
-        gnome.gnome-tweaks
+      ++ (with hunspellDicts; [ de-de en-us en-us-large ]) ++ [
         qalculate-gtk
         firefox
         gnome.gnome-sound-recorder

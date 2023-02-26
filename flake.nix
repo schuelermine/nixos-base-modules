@@ -12,7 +12,6 @@
       plymouth = import ./plymouth.nix;
       shell = import ./shell.nix;
       systemd-boot = import ./systemd-boot.nix;
-      systemd-target-fix = import ./systemd-target-fix.nix;
     };
   };
 }

@@ -10,6 +10,5 @@
     ./plymouth.nix
     ./shell.nix
     ./systemd-boot.nix
-    ./systemd-target-fix.nix
   ];
 }
