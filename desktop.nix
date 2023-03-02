@@ -12,6 +12,7 @@
     gnome.excludePackages = with pkgs; [
       gnome.gnome-calculator
       gnome.epiphany
+      gnome-tour
     ];
     systemPackages = with pkgs;
       (with aspellDicts; [ de en en-computers en-science ])

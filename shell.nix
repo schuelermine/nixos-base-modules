@@ -1,3 +1,1 @@
-{ pkgs, ... }: {
-  environment.systemPackages = with pkgs; [ nano ripgrep wget ];
-}
+{ pkgs, ... }: { environment.systemPackages = with pkgs; [ nano wget ]; }
